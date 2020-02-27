@@ -1,0 +1,17 @@
+packages/
+bin/
+obj/
+*.suo
+*.user
+*.orig
+.vs/config/applicationhost.config
+TestResults/
+*.dbmdl
+*.txt
+.vs/
+*.ncrunchproject
+*.ncrunchsolution
+/_NCrunch_*
+*.boltdata
+*.executiontimes.cache
+*.crunchsolution.cache
