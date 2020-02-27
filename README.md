@@ -1,2 +1,4 @@
 # GitVersionTest
-test gitversion with ghf 
+test gitversion with Git Hub Flow
+
+trying to work with gitversion
