@@ -1,4 +1,5 @@
 assembly-versioning-scheme: MajorMinorPatchTag
+mode: Mainline
 branches:
   master:
     mode: Mainline
