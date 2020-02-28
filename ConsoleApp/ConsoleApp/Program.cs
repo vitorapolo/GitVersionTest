@@ -8,5 +8,10 @@ namespace ConsoleApp
         {
             Console.WriteLine("Hello World !");
         }
+
+        public void testMethod()
+        {
+
+        }
     }
 }
