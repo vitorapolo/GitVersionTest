@@ -1,6 +1,14 @@
 assembly-versioning-scheme: MajorMinorPatchTag
 mode: Mainline
-branches: {}
+branches:
+  master:
+    tag: master
+  release:
+    mode: ContinuousDelivery
+    increment: Major
+  feature:
+    mode: ContinuousDelivery
+    increment: Minor
 ignore:
   sha: []
 merge-message-formats: {}
