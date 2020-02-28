@@ -4,15 +4,22 @@ branches:
     mode: ContinuousDelivery
     tag: ''
     increment: Minor
-    prevent-increment-of-merged-branch-version: true
+    is-release-branch: true
+    prevent-increment-of-merged-branch-version: false
   release:
     mode: ContinuousDelivery
     tag: 'release'
+    is-release-branch: false
     increment: Major
+    prevent-increment-of-merged-branch-version: false
   feature:
     mode: ContinuousDelivery
     tag: 'feature'
-    increment: Minor
+    increment: Patch
+  develop:
+    mode: ContinuousDelivery
+    tag: 'develop'
+    increment: Patch
 ignore:
   sha: []
 merge-message-formats: {}
