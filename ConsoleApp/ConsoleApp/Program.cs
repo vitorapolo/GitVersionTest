@@ -12,5 +12,10 @@ namespace ConsoleApp
             Console.WriteLine("feature !  ");
             Console.WriteLine("release !  ");
         }
+
+        public void testMethod()
+        {
+            Console.WriteLine("release !  ");
+        }
     }
 }
