@@ -2,6 +2,7 @@ assembly-versioning-scheme: MajorMinorPatchTag
 branches:
   master:
     mode: ContinuousDelivery
+    continuous-delivery-fallback-tag: ''
     tag: ''
     increment: Minor
     is-release-branch: true
