@@ -1,7 +1,7 @@
 assembly-versioning-scheme: MajorMinorPatchTag
 branches:
   master:
-    mode: ContinuousDelivery
+    mode: Mainline
     tag: ''
     increment: Minor
     is-release-branch: true
