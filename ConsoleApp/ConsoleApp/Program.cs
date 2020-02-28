@@ -18,6 +18,7 @@ namespace ConsoleApp
             Console.WriteLine("release !  ");
 
             Console.WriteLine("feature !  ");
+            Console.WriteLine("feature 2!  ");
         }
     }
 }
