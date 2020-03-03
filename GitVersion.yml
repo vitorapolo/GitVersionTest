@@ -2,24 +2,30 @@ assembly-versioning-scheme: MajorMinorPatchTag
 mode: Mainline
 branches:
   master:
-    tag: ''
-    increment: Minor
+    tag: 'rc'
     is-release-branch: true
-    prevent-increment-of-merged-branch-version: false
+    prevent-increment-of-merged-branch-version: true
+    track-merge-target: true
   release:
-    mode: ContinuousDelivery
+    mode: ContinuousDeployment
     tag: 'release'
     is-release-branch: false
     increment: Major
     prevent-increment-of-merged-branch-version: false
   feature:
-    mode: ContinuousDelivery
+    mode: ContinuousDeployment
     tag: 'feature'
     increment: Patch
   develop:
-    mode: ContinuousDelivery
+    mode: ContinuousDeployment
     tag: 'develop'
     increment: Patch
+  pull-request:
+    mode: ContinuousDeployment
+    tag: PullRequest
+    increment: Inherit
+    track-merge-target: true
+    tag-number-pattern: '[/-](?<number>\d+)[-/]'
 ignore:
   sha: []
 merge-message-formats: {}
