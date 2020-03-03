@@ -3,12 +3,15 @@ mode: Mainline
 branches:
   master:
     tag: ''
+    increment: Minor
     is-release-branch: true
+    prevent-increment-of-merged-branch-version: false
   release:
     mode: ContinuousDelivery
     tag: 'release'
     is-release-branch: false
-    increment: Minor
+    increment: Major
+    prevent-increment-of-merged-branch-version: false
   feature:
     mode: ContinuousDelivery
     tag: 'feature'
