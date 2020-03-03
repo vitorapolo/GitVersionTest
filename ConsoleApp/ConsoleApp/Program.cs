@@ -19,6 +19,7 @@ namespace ConsoleApp
             Console.WriteLine("release 3.0.0!  ");
             Console.WriteLine("feature !  ");
             Console.WriteLine("feature 2!  ");
+            Console.WriteLine("feature 2!  ");
         }
     }
 }
