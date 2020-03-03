@@ -4,14 +4,11 @@ branches:
   master:
     tag: ''
     is-release-branch: true
-    prevent-increment-of-merged-branch-version: true
-    track-merge-target: true
   release:
     mode: ContinuousDelivery
     tag: 'release'
     is-release-branch: false
-    increment: Major
-    prevent-increment-of-merged-branch-version: false
+    increment: Minor
   feature:
     mode: ContinuousDelivery
     tag: 'feature'
@@ -20,12 +17,6 @@ branches:
     mode: ContinuousDelivery
     tag: 'develop'
     increment: Patch
-  pull-request:
-    mode: ContinuousDelivery
-    tag: PullRequest
-    increment: Inherit
-    track-merge-target: true
-    tag-number-pattern: '[/-](?<number>\d+)[-/]'
 ignore:
   sha: []
 merge-message-formats: {}
