@@ -15,7 +15,7 @@ namespace ConsoleApp
 
         public void testMethod()
         {
-            Console.WriteLine("release !  ");
+            Console.WriteLine("release !     ");
             Console.WriteLine("release 3!  ");
 
             Console.WriteLine("feature !  ");
