@@ -7,21 +7,21 @@ branches:
     prevent-increment-of-merged-branch-version: true
     track-merge-target: true
   release:
-    mode: ContinuousDeployment
+    mode: ContinuousDelivery
     tag: 'release'
     is-release-branch: false
     increment: Major
     prevent-increment-of-merged-branch-version: false
   feature:
-    mode: ContinuousDeployment
+    mode: ContinuousDelivery
     tag: 'feature'
     increment: Patch
   develop:
-    mode: ContinuousDeployment
+    mode: ContinuousDelivery
     tag: 'develop'
     increment: Patch
   pull-request:
-    mode: ContinuousDeployment
+    mode: ContinuousDelivery
     tag: PullRequest
     increment: Inherit
     track-merge-target: true
